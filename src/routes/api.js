@@ -37,6 +37,7 @@ router.put('/contactos/delete/:id', contactorController.delete);
 // usuarios
 router.post('/registro', express.json(), usuariosController.registro);
 router.post('/login', express.json(),usuariosController.login);
+router.get('/registro', usuariosController.formRegistro);
 
 //LOGIN
 //router.post('/login', express.json(),)
