@@ -18,7 +18,7 @@ app.set('view engine', 'handlebars');
 app.set('views', '/views');
 
 app.get('', (req,res) => {
-    res.send('Hola mundo');
+    res.send(__dirname + '/src/views/contactos.html');
 });
 
 //const uri = 'mongodb+srv://testuser:Temporal-2022@cluster0.fsvjwzh.mongodb.net/agenda?retryWrites=true&w=majority';
